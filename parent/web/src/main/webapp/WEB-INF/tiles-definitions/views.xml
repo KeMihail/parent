@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE tiles-definitions PUBLIC  
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="DefaultTemplate" template="/WEB-INF/views/template/main-template.jsp">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="header" value="/WEB-INF/views/template/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/template/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp" />
+	</definition>
+
+
+	<definition name="login" template="/WEB-INF/views/login.jsp">
+	</definition>
+
+	<definition name="index" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
+
+	<definition name="carOrder.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/carOrder/list.jsp" />
+	</definition>
+	<definition name="carOrder.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/carOrder/form.jsp" />
+	</definition>
+	<definition name="carOrder.history" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/carOrder/history.jsp" />
+	</definition>
+
+	<definition name="rate.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/rate/list.jsp" />
+	</definition>
+	<definition name="rate.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/rate/form.jsp" />
+	</definition>
+
+	<definition name="driver.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/driver/list.jsp" />
+	</definition>
+	<definition name="driver.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/driver/form.jsp" />
+	</definition>
+	<definition name="driver.order" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/driver/order.jsp" />
+	</definition>
+
+	<definition name="orderAssessment.list" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/orderAssessment/list.jsp" />
+	</definition>
+	<definition name="orderAssessment.edit" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/orderAssessment/form.jsp" />
+	</definition>
+	<definition name="orderAssessment.order" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/orderAssessment/order.jsp" />
+	</definition>
+
+	<definition name="brand.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/brand/list.jsp" />
+	</definition>
+	<definition name="brand.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/brand/form.jsp" />
+	</definition>
+
+	<definition name="legalEntity.list" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/legalEntity/list.jsp" />
+	</definition>
+	<definition name="legalEntity.edit" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/legalEntity/form.jsp" />
+	</definition>
+
+	<definition name="model.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/model/list.jsp" />
+	</definition>
+	<definition name="model.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/model/form.jsp" />
+	</definition>
+
+	<definition name="car.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/car/list.jsp" />
+	</definition>
+	<definition name="car.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/car/form.jsp" />
+	</definition>
+
+	<definition name="user.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/user/list.jsp" />
+	</definition>
+	<definition name="user.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/user/form.jsp" />
+	</definition>
+
+	<definition name="serviceitem.list" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/serviceitem/list.jsp" />
+	</definition>
+	<definition name="serviceitem.edit" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/serviceitem/form.jsp" />
+	</definition>
+
+	<definition name="authentication.list" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/authentication/list.jsp" />
+	</definition>
+	<definition name="authentication.edit" extends="DefaultTemplate">
+		<put-attribute name="body"
+			value="/WEB-INF/views/authentication/form.jsp" />
+	</definition>
+
+	<definition name="carOption.list" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/carOption/list.jsp" />
+	</definition>
+
+	<definition name="carOption.edit" extends="DefaultTemplate">
+		<put-attribute name="body" value="/WEB-INF/views/carOption/form.jsp" />
+	</definition>
+
+</tiles-definitions>
